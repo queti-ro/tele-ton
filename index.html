@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Teleton sixseven</title>
+<meta name="description" content="La Teletón 2026 en un juego de tarjetas: meta, niño embajador, escenarios y artistas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Hanken+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <video id="vid" autoplay muted loop playsinline preload="auto">
+    <source src="https://pub-33c103b8d20b4bb89b2582eebcdfd9f8.r2.dev/video-ejercicios/Sforzini-lizana.MOV" type="video/mp4">
+    <source src="https://pub-33c103b8d20b4bb89b2582eebcdfd9f8.r2.dev/video-ejercicios/Sforzini-lizana.MOV" type="video/quicktime">
+  </video>
+  <div class="velo"></div>
+  <button id="snd" class="snd" type="button">Activar sonido</button>
+  <div class="hero-in">
+    <p id="estado" class="chip">Teletón 2026</p>
+    <h1><span>Teletón</span><span>sixseven</span></h1>
+    <p class="lema">Súmate a lo que nos une</p>
+    <p>Viernes 6 y sábado 7 de noviembre de 2026. Veintisiete horas de transmisión.</p>
+    <a class="btn" href="#juego">Empezar a jugar</a>
+  </div>
+</header>
+
+<main>
+  <section id="juego" aria-labelledby="jt">
+    <h2 id="jt">Lee las tarjetas y supera los tres niveles</h2>
+    <nav class="niveles" id="niv" aria-label="Niveles"></nav>
+    <div class="hud"><span>Puntos: <b id="pts">0</b></span><span id="vidas" aria-label="Vidas"></span></div>
+    <div class="arena">
+      <figure class="visor" id="visor">
+        <img id="vimg" alt="">
+        <i class="cortina"></i>
+        <figcaption id="vcap"></figcaption>
+      </figure>
+      <div class="panel" id="panel" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="momentos" class="claro" aria-labelledby="mt">
+    <h2 id="mt">Así se vive la Teletón</h2>
+    <div class="mosaico" id="mos"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Teleton sixseven es un proyecto educativo basado en información pública de la Teletón 2026.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
